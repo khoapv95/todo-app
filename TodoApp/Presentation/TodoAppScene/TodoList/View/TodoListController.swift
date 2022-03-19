@@ -10,7 +10,7 @@ import UIKit
 class TodoListController: UIViewController {
     
     // MARK: - Properties
-    
+        
     private lazy var callListButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .black
@@ -41,7 +41,15 @@ class TodoListController: UIViewController {
         return button
     }()
     
+    private var viewModel: TodoListViewModel!
+    
     // MARK: - Lifecycle
+    
+    static func create(with viewModel: TodoListViewModel) -> TodoListController {
+        let view = TodoListController()
+        view.viewModel = viewModel
+        return view
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,8 +71,7 @@ class TodoListController: UIViewController {
     // MARK: - Actions
     
     @objc func didTapCallList() {
-        print("didTapCallList")
-        navigationController?.pushViewController(CallListController(), animated: true)
+        viewModel.showCallList()
     }
     
     @objc func didTapBuyList() {
