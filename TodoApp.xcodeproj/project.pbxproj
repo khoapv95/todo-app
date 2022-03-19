@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C36E57127E61CE800EA1E35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E57027E61CE800EA1E35 /* Extensions.swift */; };
+		4C36E57527E61ED900EA1E35 /* TodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E57427E61ED900EA1E35 /* TodoListController.swift */; };
+		4C36E57927E622F700EA1E35 /* CallListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E57827E622F700EA1E35 /* CallListController.swift */; };
 		4C771EC827E614D80071B8CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EC727E614D80071B8CC /* AppDelegate.swift */; };
 		4C771ECA27E614D80071B8CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EC927E614D80071B8CC /* SceneDelegate.swift */; };
 		4C771ECC27E614D80071B8CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771ECB27E614D80071B8CC /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C36E57027E61CE800EA1E35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C36E57427E61ED900EA1E35 /* TodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListController.swift; sourceTree = "<group>"; };
+		4C36E57827E622F700EA1E35 /* CallListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListController.swift; sourceTree = "<group>"; };
 		4C771EC427E614D80071B8CC /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C771EC727E614D80071B8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C771EC927E614D80071B8CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C36E56627E61C2500EA1E35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C36E56727E61C3C00EA1E35 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C36E56827E61C4800EA1E35 /* Infrashstructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrashstructure;
+			sourceTree = "<group>";
+		};
+		4C36E56927E61C5700EA1E35 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4C36E56A27E61C5B00EA1E35 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4C36E56B27E61C6000EA1E35 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E56E27E61C9100EA1E35 /* TodoAppScene */,
+				4C36E56D27E61C8E00EA1E35 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4C36E56C27E61C6300EA1E35 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4C36E56D27E61C8E00EA1E35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E57027E61CE800EA1E35 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4C36E56E27E61C9100EA1E35 /* TodoAppScene */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E57627E622C100EA1E35 /* CallList */,
+				4C36E57227E61D8400EA1E35 /* TodoList */,
+			);
+			path = TodoAppScene;
+			sourceTree = "<group>";
+		};
+		4C36E57227E61D8400EA1E35 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E57327E61D9600EA1E35 /* View */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		4C36E57327E61D9600EA1E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E57427E61ED900EA1E35 /* TodoListController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C36E57627E622C100EA1E35 /* CallList */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E57727E622DD00EA1E35 /* View */,
+			);
+			path = CallList;
+			sourceTree = "<group>";
+		};
+		4C36E57727E622DD00EA1E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C36E57827E622F700EA1E35 /* CallListController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4C771EBB27E614D80071B8CC = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +207,13 @@
 		4C771EC627E614D80071B8CC /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C36E56C27E61C6300EA1E35 /* Application */,
+				4C36E56B27E61C6000EA1E35 /* Presentation */,
+				4C36E56A27E61C5B00EA1E35 /* Domain */,
+				4C36E56927E61C5700EA1E35 /* Data */,
+				4C36E56827E61C4800EA1E35 /* Infrashstructure */,
+				4C36E56727E61C3C00EA1E35 /* Common */,
+				4C36E56627E61C2500EA1E35 /* Resources */,
 				4C771EC727E614D80071B8CC /* AppDelegate.swift */,
 				4C771EC927E614D80071B8CC /* SceneDelegate.swift */,
 				4C771ECB27E614D80071B8CC /* ViewController.swift */,
@@ -261,10 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C36E57127E61CE800EA1E35 /* Extensions.swift in Sources */,
 				4C771ECC27E614D80071B8CC /* ViewController.swift in Sources */,
 				4C771EC827E614D80071B8CC /* AppDelegate.swift in Sources */,
+				4C36E57527E61ED900EA1E35 /* TodoListController.swift in Sources */,
 				4C771ECA27E614D80071B8CC /* SceneDelegate.swift in Sources */,
 				4C771ED227E614D80071B8CC /* TodoApp.xcdatamodeld in Sources */,
+				4C36E57927E622F700EA1E35 /* CallListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +573,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -484,7 +600,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
