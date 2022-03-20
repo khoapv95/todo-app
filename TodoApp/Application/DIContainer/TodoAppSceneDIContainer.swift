@@ -19,6 +19,16 @@ final class TodoAppSceneDIContainer {
         self.dependencies = dependencies
     }
     
+    // MARK: - Use Cases
+    func makeGetCallListUseCase() -> GetCallListUseCase {
+        return GetCallListUseCaseImpl(todoListRepository: makeTodoListRepository())
+    }
+    
+    // MARK: - Repositories
+    func makeTodoListRepository() -> TodoListRepository {
+        return TodoListRepositoryImpl(dataTransferService: dependencies.apiDataTransferService)
+    }
+    
     // MARK: - Todo List
     func makeTodoListController(actions: TodoListViewModelActions) -> TodoListController {
         return TodoListController.create(with: makeTodoListViewModel(actions: actions))
@@ -30,7 +40,11 @@ final class TodoAppSceneDIContainer {
     
     // MARK: - Call List
     func makeCallListController() -> CallListController {
-        return CallListController()
+        return CallListController.create(with: makeCallListViewModel())
+    }
+    
+    func makeCallListViewModel() -> CallListViewModel {
+        return CallListViewModelImpl(getCallListUseCase: makeGetCallListUseCase())
     }
     
     // MARK: - Flow Coordinators
