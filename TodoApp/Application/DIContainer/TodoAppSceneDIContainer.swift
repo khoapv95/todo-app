@@ -24,6 +24,10 @@ final class TodoAppSceneDIContainer {
         return GetCallListUseCaseImpl(todoListRepository: makeTodoListRepository())
     }
     
+    func makeGetBuyListUseCase() -> GetBuyListUseCase {
+        return GetBuyListUseCaseImpl(todoListRepository: makeTodoListRepository())
+    }
+    
     // MARK: - Repositories
     func makeTodoListRepository() -> TodoListRepository {
         return TodoListRepositoryImpl(dataTransferService: dependencies.apiDataTransferService)
@@ -45,6 +49,15 @@ final class TodoAppSceneDIContainer {
     
     func makeCallListViewModel() -> CallListViewModel {
         return CallListViewModelImpl(getCallListUseCase: makeGetCallListUseCase())
+    }
+    
+    // MARK: - Buy List
+    func makeBuyListController() -> BuyListController {
+        return BuyListController.create(with: makeBuyListViewModel())
+    }
+    
+    func makeBuyListViewModel() -> BuyListViewModel {
+        return BuyListViewModelImpl(getBuyListUseCase: makeGetBuyListUseCase())
     }
     
     // MARK: - Flow Coordinators

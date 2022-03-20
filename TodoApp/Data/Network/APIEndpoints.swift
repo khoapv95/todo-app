@@ -14,5 +14,11 @@ struct APIEndpoints {
         return Endpoint(path: "imkhan334/demo-1/call",
                         method: .get)
     }
+    
+    static func getBuyList() -> Endpoint<[ItemResponseDTO]> {
+
+        return Endpoint(path: "imkhan334/demo-1/buy",
+                        method: .get)
+    }
 
 }

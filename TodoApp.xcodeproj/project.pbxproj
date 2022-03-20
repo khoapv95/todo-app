@@ -45,6 +45,9 @@
 		4C83354327E6FED000A2299F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354227E6FED000A2299F /* LoadingView.swift */; };
 		4C83354827E708C000A2299F /* BuyListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354727E708C000A2299F /* BuyListController.swift */; };
 		4C83354A27E7093600A2299F /* BuyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354927E7093600A2299F /* BuyListViewModel.swift */; };
+		4C83354C27E70BA300A2299F /* ItemResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354B27E70BA300A2299F /* ItemResponseDTO+Mapping.swift */; };
+		4C83354E27E70C9D00A2299F /* GetBuyListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354D27E70C9D00A2299F /* GetBuyListUseCase.swift */; };
+		4C83355027E70E0300A2299F /* BuyListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354F27E70E0300A2299F /* BuyListItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		4C83354227E6FED000A2299F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4C83354727E708C000A2299F /* BuyListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyListController.swift; sourceTree = "<group>"; };
 		4C83354927E7093600A2299F /* BuyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyListViewModel.swift; sourceTree = "<group>"; };
+		4C83354B27E70BA300A2299F /* ItemResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		4C83354D27E70C9D00A2299F /* GetBuyListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuyListUseCase.swift; sourceTree = "<group>"; };
+		4C83354F27E70E0300A2299F /* BuyListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyListItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				4C83353927E6E88A00A2299F /* GetCallListUseCase.swift */,
+				4C83354D27E70C9D00A2299F /* GetBuyListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -400,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				4C83353527E6E59600A2299F /* PersonResponseDTO+Mapping.swift */,
+				4C83354B27E70BA300A2299F /* ItemResponseDTO+Mapping.swift */,
 			);
 			path = DataMapping;
 			sourceTree = "<group>";
@@ -434,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				4C83354927E7093600A2299F /* BuyListViewModel.swift */,
+				4C83354F27E70E0300A2299F /* BuyListItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -576,6 +585,7 @@
 				4C36E57C27E627FC00EA1E35 /* TodoListViewModel.swift in Sources */,
 				4C36E58127E62CC500EA1E35 /* TodoAppSceneDIContainer.swift in Sources */,
 				4C36E58427E62D2400EA1E35 /* TodoListFlowCoordinator.swift in Sources */,
+				4C83354E27E70C9D00A2299F /* GetBuyListUseCase.swift in Sources */,
 				4C83351B27E6DAA000A2299F /* Endpoint.swift in Sources */,
 				4C36E57127E61CE800EA1E35 /* Extensions.swift in Sources */,
 				4C83354A27E7093600A2299F /* BuyListViewModel.swift in Sources */,
@@ -586,11 +596,13 @@
 				4C83353A27E6E88A00A2299F /* GetCallListUseCase.swift in Sources */,
 				4C83352A27E6E36800A2299F /* Cancellable.swift in Sources */,
 				4C83353227E6E4CE00A2299F /* TodoListRepositoryImpl.swift in Sources */,
+				4C83355027E70E0300A2299F /* BuyListItemViewModel.swift in Sources */,
 				4C36E57527E61ED900EA1E35 /* TodoListController.swift in Sources */,
 				4C83351D27E6DB4500A2299F /* NetworkService.swift in Sources */,
 				4C83353627E6E59600A2299F /* PersonResponseDTO+Mapping.swift in Sources */,
 				4C771ECA27E614D80071B8CC /* SceneDelegate.swift in Sources */,
 				4C83354127E6EF6500A2299F /* CallListIItemViewModel.swift in Sources */,
+				4C83354C27E70BA300A2299F /* ItemResponseDTO+Mapping.swift in Sources */,
 				4C771ED227E614D80071B8CC /* TodoApp.xcdatamodeld in Sources */,
 				4C83352827E6E27A00A2299F /* Item.swift in Sources */,
 				4C83354327E6FED000A2299F /* LoadingView.swift in Sources */,

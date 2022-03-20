@@ -31,4 +31,18 @@ extension TodoListRepositoryImpl: TodoListRepository {
         }
         return task
     }
+    
+    func fetchBuyList(completion: @escaping (Result<[Item], Error>) -> Void) -> Cancellable? {
+        let endpoint = APIEndpoints.getBuyList()
+        let task = RepositoryTask()
+        task.networkTask = self.dataTransferService.request(with: endpoint) { result in
+            switch result {
+            case .success(let responseDTO):
+                completion(.success(responseDTO.map { $0.toDomain() }))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+        return task
+    }
 }

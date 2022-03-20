@@ -49,7 +49,7 @@ extension TodoListViewModelImpl {
     }
     
     func showBuyList() {
-        
+        actions?.showBuyList()
     }
     
     func showSellList() {

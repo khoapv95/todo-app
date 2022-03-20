@@ -16,7 +16,6 @@ final class GetCallListUseCaseImpl: GetCallListUseCase {
     private let todoListRepository: TodoListRepository
 
     init(todoListRepository: TodoListRepository) {
-
         self.todoListRepository = todoListRepository
     }
 
