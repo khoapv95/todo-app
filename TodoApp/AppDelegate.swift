@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        fetchCoreData()
         return true
     }
 
@@ -62,9 +63,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
+    
+    func fetchCoreData() {
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "ItemToSellEntity")
+        do {
+            let items: [NSManagedObject] = try context.fetch(fetchRequest)
+            
+            if items.isEmpty {
+                saveContext()
+            } else {
+                items.forEach {
+                    print("Name: \($0.value(forKey: "name") ?? "")")
+                    print("Price: \($0.value(forKey: "price") ?? 0)")
+                    print("Quantity: \($0.value(forKey: "quantity") ?? 0)")
+                }
+            }
+
+        } catch let error as NSError {
+          print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
 
     func saveContext () {
         let context = persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "ItemToSellEntity", in: context)!
+        
+        let item1 = NSManagedObject(entity: entity, insertInto: context)
+        item1.setValue(1, forKey: "id")
+        item1.setValue("iPhone X", forKey: "name")
+        item1.setValue(150000, forKey: "price")
+        item1.setValue(1, forKey: "quantity")
+        item1.setValue(2, forKey: "type")
+        
+        let item2 = NSManagedObject(entity: entity, insertInto: context)
+        item2.setValue(2, forKey: "id")
+        item2.setValue("TV", forKey: "name")
+        item2.setValue(38000, forKey: "price")
+        item2.setValue(2, forKey: "quantity")
+        item2.setValue(2, forKey: "type")
+        
+        let item3 = NSManagedObject(entity: entity, insertInto: context)
+        item3.setValue(3, forKey: "id")
+        item3.setValue("Table", forKey: "name")
+        item3.setValue(12000, forKey: "price")
+        item3.setValue(1, forKey: "quantity")
+        item3.setValue(2, forKey: "type")
+
         if context.hasChanges {
             do {
                 try context.save()

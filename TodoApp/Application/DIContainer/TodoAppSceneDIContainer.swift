@@ -15,6 +15,9 @@ final class TodoAppSceneDIContainer {
     
     private let dependencies: Dependencies
     
+    // MARK: - Persistent Storage
+    lazy var persistentStorage: ItemResponseStorage = CoreDataItemResponseStorage()
+    
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
@@ -28,9 +31,14 @@ final class TodoAppSceneDIContainer {
         return GetBuyListUseCaseImpl(todoListRepository: makeTodoListRepository())
     }
     
+    func makeSellListUseCase() -> GetSellListUseCase {
+        return GetSellListUseCaseImpl(todoListRepository: makeTodoListRepository())
+    }
+    
     // MARK: - Repositories
     func makeTodoListRepository() -> TodoListRepository {
-        return TodoListRepositoryImpl(dataTransferService: dependencies.apiDataTransferService)
+        return TodoListRepositoryImpl(dataTransferService: dependencies.apiDataTransferService,
+                                      persistentStorage: persistentStorage)
     }
     
     // MARK: - Todo List
@@ -58,6 +66,15 @@ final class TodoAppSceneDIContainer {
     
     func makeBuyListViewModel() -> BuyListViewModel {
         return BuyListViewModelImpl(getBuyListUseCase: makeGetBuyListUseCase())
+    }
+    
+    // MARK: - Sell List
+    func makeSellListController() -> SellListController {
+        return SellListController.create(with: makeSellListViewModel())
+    }
+    
+    func makeSellListViewModel() -> SellListViewModel {
+        return SellListViewModelImpl(getSellListUseCase: makeSellListUseCase())
     }
     
     // MARK: - Flow Coordinators

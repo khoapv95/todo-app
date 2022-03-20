@@ -53,6 +53,6 @@ extension TodoListViewModelImpl {
     }
     
     func showSellList() {
-        
+        actions?.showSellList()
     }
 }

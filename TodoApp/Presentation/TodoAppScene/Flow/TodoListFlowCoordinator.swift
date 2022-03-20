@@ -11,6 +11,7 @@ protocol TodoListFlowCoordinatorDependencies  {
     func makeTodoListController(actions: TodoListViewModelActions) -> TodoListController
     func makeCallListController() -> CallListController
     func makeBuyListController() -> BuyListController
+    func makeSellListController() -> SellListController
 }
 
 final class TodoListFlowCoordinator {
@@ -30,7 +31,7 @@ final class TodoListFlowCoordinator {
         // Note: here we keep strong reference with actions, this way this flow does not need to be strong referenced
         let actions = TodoListViewModelActions(showCallList: showCallList,
                                                showBuyList: showBuyList,
-                                               showSellList: showCallList)
+                                               showSellList: showSellList)
         let vc = dependencies.makeTodoListController(actions: actions)
 
         navigationController?.pushViewController(vc, animated: false)
@@ -44,6 +45,11 @@ final class TodoListFlowCoordinator {
     
     private func showBuyList() {
         let vc = dependencies.makeBuyListController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func showSellList() {
+        let vc = dependencies.makeSellListController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

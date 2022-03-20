@@ -79,6 +79,6 @@ class TodoListController: UIViewController {
     }
     
     @objc func didTapSellList() {
-        print("didTapSellList")
+        viewModel.showSellList()
     }
 }

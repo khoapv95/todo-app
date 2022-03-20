@@ -15,6 +15,7 @@
 		4C36E58127E62CC500EA1E35 /* TodoAppSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E58027E62CC500EA1E35 /* TodoAppSceneDIContainer.swift */; };
 		4C36E58427E62D2400EA1E35 /* TodoListFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E58327E62D2400EA1E35 /* TodoListFlowCoordinator.swift */; };
 		4C36E58627E62F0600EA1E35 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36E58527E62F0600EA1E35 /* AppFlowCoordinator.swift */; };
+		4C412CF427E72391004088A6 /* ItemResponseEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C412CF327E72391004088A6 /* ItemResponseEntity+Mapping.swift */; };
 		4C771EC827E614D80071B8CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EC727E614D80071B8CC /* AppDelegate.swift */; };
 		4C771ECA27E614D80071B8CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EC927E614D80071B8CC /* SceneDelegate.swift */; };
 		4C771ECC27E614D80071B8CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771ECB27E614D80071B8CC /* ViewController.swift */; };
@@ -25,6 +26,9 @@
 		4C771EE227E614D90071B8CC /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EE127E614D90071B8CC /* TodoAppTests.swift */; };
 		4C771EEC27E614DA0071B8CC /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EEB27E614DA0071B8CC /* TodoAppUITests.swift */; };
 		4C771EEE27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */; };
+		4C7B574427E72FFF004A8412 /* GetSellListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B574327E72FFF004A8412 /* GetSellListUseCase.swift */; };
+		4C7B574927E730A1004A8412 /* SellListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B574827E730A1004A8412 /* SellListController.swift */; };
+		4C7B574B27E730FF004A8412 /* SellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B574A27E730FF004A8412 /* SellListViewModel.swift */; };
 		4C83351727E6D8A200A2299F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351627E6D8A200A2299F /* AppConfig.swift */; };
 		4C83351927E6D98E00A2299F /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351827E6D98E00A2299F /* NetworkConfig.swift */; };
 		4C83351B27E6DAA000A2299F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351A27E6DAA000A2299F /* Endpoint.swift */; };
@@ -48,6 +52,9 @@
 		4C83354C27E70BA300A2299F /* ItemResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354B27E70BA300A2299F /* ItemResponseDTO+Mapping.swift */; };
 		4C83354E27E70C9D00A2299F /* GetBuyListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354D27E70C9D00A2299F /* GetBuyListUseCase.swift */; };
 		4C83355027E70E0300A2299F /* BuyListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354F27E70E0300A2299F /* BuyListItemViewModel.swift */; };
+		4C83355427E71CBD00A2299F /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83355327E71CBD00A2299F /* CoreDataStorage.swift */; };
+		4C83355727E7206F00A2299F /* ItemResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83355627E7206F00A2299F /* ItemResponseStorage.swift */; };
+		4C83355927E7209F00A2299F /* CoreDataItemResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83355827E7209F00A2299F /* CoreDataItemResponseStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +83,7 @@
 		4C36E58027E62CC500EA1E35 /* TodoAppSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppSceneDIContainer.swift; sourceTree = "<group>"; };
 		4C36E58327E62D2400EA1E35 /* TodoListFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListFlowCoordinator.swift; sourceTree = "<group>"; };
 		4C36E58527E62F0600EA1E35 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		4C412CF327E72391004088A6 /* ItemResponseEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemResponseEntity+Mapping.swift"; sourceTree = "<group>"; };
 		4C771EC427E614D80071B8CC /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C771EC727E614D80071B8CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C771EC927E614D80071B8CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +98,9 @@
 		4C771EE727E614DA0071B8CC /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C771EEB27E614DA0071B8CC /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C7B574327E72FFF004A8412 /* GetSellListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSellListUseCase.swift; sourceTree = "<group>"; };
+		4C7B574827E730A1004A8412 /* SellListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellListController.swift; sourceTree = "<group>"; };
+		4C7B574A27E730FF004A8412 /* SellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellListViewModel.swift; sourceTree = "<group>"; };
 		4C83351627E6D8A200A2299F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		4C83351827E6D98E00A2299F /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		4C83351A27E6DAA000A2299F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -113,6 +124,9 @@
 		4C83354B27E70BA300A2299F /* ItemResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		4C83354D27E70C9D00A2299F /* GetBuyListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuyListUseCase.swift; sourceTree = "<group>"; };
 		4C83354F27E70E0300A2299F /* BuyListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyListItemViewModel.swift; sourceTree = "<group>"; };
+		4C83355327E71CBD00A2299F /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		4C83355627E7206F00A2299F /* ItemResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResponseStorage.swift; sourceTree = "<group>"; };
+		4C83355827E7209F00A2299F /* CoreDataItemResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataItemResponseStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +183,7 @@
 		4C36E56927E61C5700EA1E35 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4C83355127E71C7500A2299F /* PersistentStorages */,
 				4C83353027E6E49800A2299F /* Repositories */,
 				4C83353327E6E55C00A2299F /* Network */,
 			);
@@ -218,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				4C36E58227E62CEF00EA1E35 /* Flow */,
+				4C7B574527E73054004A8412 /* SellList */,
 				4C83354427E7089C00A2299F /* BuyList */,
 				4C36E57627E622C100EA1E35 /* CallList */,
 				4C36E57227E61D8400EA1E35 /* TodoList */,
@@ -284,6 +300,14 @@
 			path = Flow;
 			sourceTree = "<group>";
 		};
+		4C412CF227E72339004088A6 /* EntityMapping */ = {
+			isa = PBXGroup;
+			children = (
+				4C412CF327E72391004088A6 /* ItemResponseEntity+Mapping.swift */,
+			);
+			path = EntityMapping;
+			sourceTree = "<group>";
+		};
 		4C771EBB27E614D80071B8CC = {
 			isa = PBXGroup;
 			children = (
@@ -321,7 +345,6 @@
 				4C771ED327E614D90071B8CC /* Assets.xcassets */,
 				4C771ED527E614D90071B8CC /* LaunchScreen.storyboard */,
 				4C771ED827E614D90071B8CC /* Info.plist */,
-				4C771ED027E614D80071B8CC /* TodoApp.xcdatamodeld */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -341,6 +364,31 @@
 				4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */,
 			);
 			path = TodoAppUITests;
+			sourceTree = "<group>";
+		};
+		4C7B574527E73054004A8412 /* SellList */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B574727E73093004A8412 /* ViewModel */,
+				4C7B574627E73090004A8412 /* View */,
+			);
+			path = SellList;
+			sourceTree = "<group>";
+		};
+		4C7B574627E73090004A8412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B574827E730A1004A8412 /* SellListController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C7B574727E73093004A8412 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B574A27E730FF004A8412 /* SellListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4C83352027E6E18C00A2299F /* Interfaces */ = {
@@ -364,6 +412,7 @@
 			children = (
 				4C83353927E6E88A00A2299F /* GetCallListUseCase.swift */,
 				4C83354D27E70C9D00A2299F /* GetBuyListUseCase.swift */,
+				4C7B574327E72FFF004A8412 /* GetSellListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -445,6 +494,34 @@
 				4C83354F27E70E0300A2299F /* BuyListItemViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C83355127E71C7500A2299F /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				4C412CF227E72339004088A6 /* EntityMapping */,
+				4C83355527E7205B00A2299F /* ItemResponseStorage */,
+				4C83355227E71CAE00A2299F /* CoreDataStorage */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		4C83355227E71CAE00A2299F /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4C83355327E71CBD00A2299F /* CoreDataStorage.swift */,
+				4C771ED027E614D80071B8CC /* TodoApp.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		4C83355527E7205B00A2299F /* ItemResponseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4C83355627E7206F00A2299F /* ItemResponseStorage.swift */,
+				4C83355827E7209F00A2299F /* CoreDataItemResponseStorage.swift */,
+			);
+			path = ItemResponseStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,21 +655,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7B574427E72FFF004A8412 /* GetSellListUseCase.swift in Sources */,
 				4C83353827E6E64300A2299F /* APIEndpoints.swift in Sources */,
 				4C83351927E6D98E00A2299F /* NetworkConfig.swift in Sources */,
 				4C83352C27E6E3B500A2299F /* TodoListRepository.swift in Sources */,
 				4C83353D27E6E95A00A2299F /* CallListViewModel.swift in Sources */,
 				4C36E57C27E627FC00EA1E35 /* TodoListViewModel.swift in Sources */,
+				4C7B574B27E730FF004A8412 /* SellListViewModel.swift in Sources */,
 				4C36E58127E62CC500EA1E35 /* TodoAppSceneDIContainer.swift in Sources */,
 				4C36E58427E62D2400EA1E35 /* TodoListFlowCoordinator.swift in Sources */,
+				4C412CF427E72391004088A6 /* ItemResponseEntity+Mapping.swift in Sources */,
 				4C83354E27E70C9D00A2299F /* GetBuyListUseCase.swift in Sources */,
 				4C83351B27E6DAA000A2299F /* Endpoint.swift in Sources */,
 				4C36E57127E61CE800EA1E35 /* Extensions.swift in Sources */,
 				4C83354A27E7093600A2299F /* BuyListViewModel.swift in Sources */,
 				4C83352627E6E24500A2299F /* Person.swift in Sources */,
+				4C83355427E71CBD00A2299F /* CoreDataStorage.swift in Sources */,
 				4C36E58627E62F0600EA1E35 /* AppFlowCoordinator.swift in Sources */,
+				4C83355927E7209F00A2299F /* CoreDataItemResponseStorage.swift in Sources */,
 				4C771ECC27E614D80071B8CC /* ViewController.swift in Sources */,
 				4C771EC827E614D80071B8CC /* AppDelegate.swift in Sources */,
+				4C7B574927E730A1004A8412 /* SellListController.swift in Sources */,
 				4C83353A27E6E88A00A2299F /* GetCallListUseCase.swift in Sources */,
 				4C83352A27E6E36800A2299F /* Cancellable.swift in Sources */,
 				4C83353227E6E4CE00A2299F /* TodoListRepositoryImpl.swift in Sources */,
@@ -600,6 +683,7 @@
 				4C36E57527E61ED900EA1E35 /* TodoListController.swift in Sources */,
 				4C83351D27E6DB4500A2299F /* NetworkService.swift in Sources */,
 				4C83353627E6E59600A2299F /* PersonResponseDTO+Mapping.swift in Sources */,
+				4C83355727E7206F00A2299F /* ItemResponseStorage.swift in Sources */,
 				4C771ECA27E614D80071B8CC /* SceneDelegate.swift in Sources */,
 				4C83354127E6EF6500A2299F /* CallListIItemViewModel.swift in Sources */,
 				4C83354C27E70BA300A2299F /* ItemResponseDTO+Mapping.swift in Sources */,
@@ -794,8 +878,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,8 +907,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
