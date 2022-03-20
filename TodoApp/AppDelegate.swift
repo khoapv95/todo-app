@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let items: [NSManagedObject] = try context.fetch(fetchRequest)
             
             if items.isEmpty {
-                saveContext()
+                insertDataToDB()
             } else {
                 items.forEach {
                     print("Name: \($0.value(forKey: "name") ?? "")")
@@ -85,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    func saveContext () {
+    func insertDataToDB () {
         let context = persistentContainer.viewContext
         
         let entity = NSEntityDescription.entity(forEntityName: "ItemToSellEntity", in: context)!
