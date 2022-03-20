@@ -9,6 +9,16 @@ import UIKit
 
 final class TodoAppSceneDIContainer {
     
+    struct Dependencies {
+        let apiDataTransferService: DataTransferService
+    }
+    
+    private let dependencies: Dependencies
+    
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
+    }
+    
     // MARK: - Todo List
     func makeTodoListController(actions: TodoListViewModelActions) -> TodoListController {
         return TodoListController.create(with: makeTodoListViewModel(actions: actions))

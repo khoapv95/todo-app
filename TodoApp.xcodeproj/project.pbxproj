@@ -25,6 +25,11 @@
 		4C771EE227E614D90071B8CC /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EE127E614D90071B8CC /* TodoAppTests.swift */; };
 		4C771EEC27E614DA0071B8CC /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EEB27E614DA0071B8CC /* TodoAppUITests.swift */; };
 		4C771EEE27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */; };
+		4C83351727E6D8A200A2299F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351627E6D8A200A2299F /* AppConfig.swift */; };
+		4C83351927E6D98E00A2299F /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351827E6D98E00A2299F /* NetworkConfig.swift */; };
+		4C83351B27E6DAA000A2299F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351A27E6DAA000A2299F /* Endpoint.swift */; };
+		4C83351D27E6DB4500A2299F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351C27E6DB4500A2299F /* NetworkService.swift */; };
+		4C83351F27E6DB5600A2299F /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83351E27E6DB5600A2299F /* DataTransferService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		4C771EE727E614DA0071B8CC /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C771EEB27E614DA0071B8CC /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C83351627E6D8A200A2299F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4C83351827E6D98E00A2299F /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		4C83351A27E6DAA000A2299F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4C83351C27E6DB4500A2299F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4C83351E27E6DB5600A2299F /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +118,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		4C36E56827E61C4800EA1E35 /* Infrashstructure */ = {
+		4C36E56827E61C4800EA1E35 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4C83351A27E6DAA000A2299F /* Endpoint.swift */,
+				4C83351827E6D98E00A2299F /* NetworkConfig.swift */,
+				4C83351C27E6DB4500A2299F /* NetworkService.swift */,
+				4C83351E27E6DB5600A2299F /* DataTransferService.swift */,
 			);
-			path = Infrashstructure;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		4C36E56927E61C5700EA1E35 /* Data */ = {
@@ -141,6 +155,7 @@
 		4C36E56C27E61C6300EA1E35 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				4C83351627E6D8A200A2299F /* AppConfig.swift */,
 				4C36E58527E62F0600EA1E35 /* AppFlowCoordinator.swift */,
 				4C36E57D27E62C7E00EA1E35 /* DIContainer */,
 			);
@@ -250,7 +265,7 @@
 				4C36E56B27E61C6000EA1E35 /* Presentation */,
 				4C36E56A27E61C5B00EA1E35 /* Domain */,
 				4C36E56927E61C5700EA1E35 /* Data */,
-				4C36E56827E61C4800EA1E35 /* Infrashstructure */,
+				4C36E56827E61C4800EA1E35 /* Network */,
 				4C36E56727E61C3C00EA1E35 /* Common */,
 				4C36E56627E61C2500EA1E35 /* Resources */,
 				4C771EC727E614D80071B8CC /* AppDelegate.swift */,
@@ -413,18 +428,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C83351927E6D98E00A2299F /* NetworkConfig.swift in Sources */,
 				4C36E57C27E627FC00EA1E35 /* TodoListViewModel.swift in Sources */,
 				4C36E58127E62CC500EA1E35 /* TodoAppSceneDIContainer.swift in Sources */,
 				4C36E58427E62D2400EA1E35 /* TodoListFlowCoordinator.swift in Sources */,
+				4C83351B27E6DAA000A2299F /* Endpoint.swift in Sources */,
 				4C36E57127E61CE800EA1E35 /* Extensions.swift in Sources */,
 				4C36E58627E62F0600EA1E35 /* AppFlowCoordinator.swift in Sources */,
 				4C771ECC27E614D80071B8CC /* ViewController.swift in Sources */,
 				4C771EC827E614D80071B8CC /* AppDelegate.swift in Sources */,
 				4C36E57527E61ED900EA1E35 /* TodoListController.swift in Sources */,
+				4C83351D27E6DB4500A2299F /* NetworkService.swift in Sources */,
 				4C771ECA27E614D80071B8CC /* SceneDelegate.swift in Sources */,
 				4C771ED227E614D80071B8CC /* TodoApp.xcdatamodeld in Sources */,
+				4C83351727E6D8A200A2299F /* AppConfig.swift in Sources */,
 				4C36E57927E622F700EA1E35 /* CallListController.swift in Sources */,
 				4C36E57F27E62C8B00EA1E35 /* AppDIContainer.swift in Sources */,
+				4C83351F27E6DB5600A2299F /* DataTransferService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

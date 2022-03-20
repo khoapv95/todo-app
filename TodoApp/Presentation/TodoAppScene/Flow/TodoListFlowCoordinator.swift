@@ -26,7 +26,7 @@ final class TodoListFlowCoordinator {
     }
     
     func start() {
-        // Note: here we keep strong reference with actions, this way this flow do not need to be strong referenced
+        // Note: here we keep strong reference with actions, this way this flow does not need to be strong referenced
         let actions = TodoListViewModelActions(showCallList: showCallList,
                                                showBuyList: showCallList,
                                                showSellList: showCallList)
