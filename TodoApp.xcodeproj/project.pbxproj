@@ -23,7 +23,6 @@
 		4C771ED227E614D80071B8CC /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C771ED027E614D80071B8CC /* TodoApp.xcdatamodeld */; };
 		4C771ED427E614D90071B8CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C771ED327E614D90071B8CC /* Assets.xcassets */; };
 		4C771ED727E614D90071B8CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C771ED527E614D90071B8CC /* LaunchScreen.storyboard */; };
-		4C771EE227E614D90071B8CC /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EE127E614D90071B8CC /* TodoAppTests.swift */; };
 		4C771EEC27E614DA0071B8CC /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EEB27E614DA0071B8CC /* TodoAppUITests.swift */; };
 		4C771EEE27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */; };
 		4C7B574427E72FFF004A8412 /* GetSellListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B574327E72FFF004A8412 /* GetSellListUseCase.swift */; };
@@ -55,6 +54,15 @@
 		4C83355427E71CBD00A2299F /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83355327E71CBD00A2299F /* CoreDataStorage.swift */; };
 		4C83355727E7206F00A2299F /* ItemResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83355627E7206F00A2299F /* ItemResponseStorage.swift */; };
 		4C83355927E7209F00A2299F /* CoreDataItemResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83355827E7209F00A2299F /* CoreDataItemResponseStorage.swift */; };
+		4CDFB4DE27FB2FE500E7032F /* CallListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFB4DD27FB2FE500E7032F /* CallListViewModelTests.swift */; };
+		4CDFB4DF27FB305E00E7032F /* CallListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83353C27E6E95A00A2299F /* CallListViewModel.swift */; };
+		4CDFB4E027FB306500E7032F /* GetCallListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83353927E6E88A00A2299F /* GetCallListUseCase.swift */; };
+		4CDFB4E127FB30D900E7032F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83352527E6E24500A2299F /* Person.swift */; };
+		4CDFB4E227FB30E000E7032F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83352927E6E36800A2299F /* Cancellable.swift */; };
+		4CDFB4E327FB345A00E7032F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83353E27E6EF1300A2299F /* Observable.swift */; };
+		4CDFB4E427FB345F00E7032F /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83352B27E6E3B500A2299F /* TodoListRepository.swift */; };
+		4CDFB4E527FB346C00E7032F /* CallListIItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83354027E6EF6500A2299F /* CallListIItemViewModel.swift */; };
+		4CDFB4E627FB348100E7032F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C83352727E6E27A00A2299F /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +102,6 @@
 		4C771ED627E614D90071B8CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C771ED827E614D90071B8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C771EDD27E614D90071B8CC /* TodoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C771EE127E614D90071B8CC /* TodoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppTests.swift; sourceTree = "<group>"; };
 		4C771EE727E614DA0071B8CC /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C771EEB27E614DA0071B8CC /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		4C771EED27E614DA0071B8CC /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -127,6 +134,7 @@
 		4C83355327E71CBD00A2299F /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		4C83355627E7206F00A2299F /* ItemResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResponseStorage.swift; sourceTree = "<group>"; };
 		4C83355827E7209F00A2299F /* CoreDataItemResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataItemResponseStorage.swift; sourceTree = "<group>"; };
+		4CDFB4DD27FB2FE500E7032F /* CallListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,7 +360,7 @@
 		4C771EE027E614D90071B8CC /* TodoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C771EE127E614D90071B8CC /* TodoAppTests.swift */,
+				4CDFB4DC27FB2F7400E7032F /* Presentation */,
 			);
 			path = TodoAppTests;
 			sourceTree = "<group>";
@@ -522,6 +530,14 @@
 				4C83355827E7209F00A2299F /* CoreDataItemResponseStorage.swift */,
 			);
 			path = ItemResponseStorage;
+			sourceTree = "<group>";
+		};
+		4CDFB4DC27FB2F7400E7032F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4CDFB4DD27FB2FE500E7032F /* CallListViewModelTests.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -704,7 +720,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C771EE227E614D90071B8CC /* TodoAppTests.swift in Sources */,
+				4CDFB4E227FB30E000E7032F /* Cancellable.swift in Sources */,
+				4CDFB4E627FB348100E7032F /* Item.swift in Sources */,
+				4CDFB4E427FB345F00E7032F /* TodoListRepository.swift in Sources */,
+				4CDFB4DF27FB305E00E7032F /* CallListViewModel.swift in Sources */,
+				4CDFB4E527FB346C00E7032F /* CallListIItemViewModel.swift in Sources */,
+				4CDFB4E027FB306500E7032F /* GetCallListUseCase.swift in Sources */,
+				4CDFB4E127FB30D900E7032F /* Person.swift in Sources */,
+				4CDFB4E327FB345A00E7032F /* Observable.swift in Sources */,
+				4CDFB4DE27FB2FE500E7032F /* CallListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
